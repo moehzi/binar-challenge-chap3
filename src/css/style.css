@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+	--h1: 80px;
+	--h2: 36px;
+	--h3: 24px;
+	--body: 18px;
+	--subText: 14px;
+	--primaryColor: #FFB548;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffff;
+	font-size: var(--body);
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 100%;
+	height: 90px;
+	display: grid;
+	grid-template-columns: 0.2fr 1fr;
+	align-items: center;
+	justify-content: center;
+	padding: 0 96px;
+}
+
+.menu__container {
+	display: grid;
+	grid-template-columns: 0.4fr 0.15fr;
+	justify-content: space-between;
+}
+
+.nav__menu {
+	font-size: 12px;
+	justify-content: space-between;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav__menu .menu--1 {}
+
+
+.nav__menu li a {
+	text-decoration: none;
+	color: var(--body);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.menu-toggle .bar {
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: all 0.3s ease in ease-in-out;
+	background: #ffffff;
+}
+
+/* responsive  */
+@media screen and (max-width:992px) {
+
+	.menu__container {
+		grid-template-columns: 0.5fr 0.3fr;
+	}
+}
+
+/* responsive 768 */
+@media screen and (max-width:768px) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		padding: 0;
+	}
+
+	.logo,
+	.menu-toggle {
+		padding: 48px;
+	}
+
+	.menu-toggle {
+		display: inline;
+		cursor: pointer;
+	}
+
+	.menu-toggle .bar {
+		display: block;
+		transition: all 0.3s ease-out;
+	}
+
+	.menu__container {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		position: absolute;
+		top: 90px;
+		margin: auto;
+		left: -100%;
+		opacity: 0;
+		transition: all 0.5s ease;
+	}
+
+	.nav__menu {
+		flex-direction: column;
+	}
+
+	.menu__container.active {
+		background-color: rgba(0, 0, 0, 0.5);
+		left: 0;
+		opacity: 1;
+		transition: all 0.5 ease;
+	}
+
+	.nav-links:hover {
+		background-color: black;
+		width: 100%;
+	}
+
+	.nav-links {
+		text-align: center;
+		line-height: 60px;
+		width: 100%;
+		display: table;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(2) {
+		opacity: 0;
+		transition: all 0.3s ease-out;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+		transition: all 0.3s ease-out;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+		transition: all 0.3s ease-out;
+	}
+}
