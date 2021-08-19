@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-	--h1: 80px;
+	--h1: 5vmax;
 	--h2: 36px;
-	--h3: 24px;
+	--h3: 1.5vmax;
 	--body: 18px;
 	--subText: 14px;
 	--primaryColor: #FFB548;
@@ -47,7 +47,6 @@ nav {
 	align-items: center;
 }
 
-.nav__menu .menu--1 {}
 
 
 .nav__menu li a {
@@ -74,7 +73,9 @@ nav {
 	background-image: url(../img/bg-image-1.svg);
 	height: 960px;
 	background-size: cover;
-
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
 }
 
 .h1 {
@@ -93,9 +94,9 @@ nav {
 }
 
 .btn {
-	padding: 16px 72px;
+	padding: 1vmax 4.5vmax;
 	font-family: 'Open Sans';
-	font-size: 16px;
+	font-size: 1vmax;
 	font-weight: 700;
 	border: none;
 	border-radius: 4px;
@@ -127,10 +128,12 @@ nav {
 }
 
 .scroll-down-button {
-	align-items: center;
 	margin-top: 285px;
-	justify-content: center;
+	text-align: center;
+
 }
+
+
 
 /* responsive  */
 @media screen and (max-width:992px) {
