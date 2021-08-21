@@ -330,7 +330,7 @@ nav {
 	}
 
 	.about__gallery {
-		height: 60vh;
+		height: 100vh;
 	}
 
 	.list-progress {
@@ -338,6 +338,6 @@ nav {
 	}
 
 	.game-features {
-		height: 60vh;
+		height: 100vh;
 	}
 }
