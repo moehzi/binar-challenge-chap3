@@ -119,11 +119,11 @@ nav {
 }
 
 .cta--description {
-	margin-top: 60px;
+	margin-top: 3.75vmax;
 }
 
 .btn--cta {
-	margin-top: 60px;
+	margin-top: 3.75vmax;
 }
 
 .p__story {
@@ -132,7 +132,7 @@ nav {
 }
 
 .scroll-down-button {
-	margin-top: 285px;
+	margin-top: 18vmax;
 	text-align: center;
 
 }
