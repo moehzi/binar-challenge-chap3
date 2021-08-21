@@ -75,7 +75,7 @@ nav {
 
 .main-screen {
 	display: grid;
-	background-image: url(../img/bg-image-1.svg);
+	background-image: url(/src/img/bg-image-1.png);
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
